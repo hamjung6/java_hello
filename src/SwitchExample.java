@@ -88,12 +88,13 @@ public class SwitchExample {
 		for (int i = 1; i <= 100; i++) {
 			if (i % 3 == 0) {
 				sum += i;
-				System.out.println(sum);
 			}
 		}
 
+		System.out.println(sum);
+
 		System.out.println("--------------");
-		
+
 		// 1에서 100까지의 3의 배수를 더하는 while 문을 사용하시오
 		int i = 1;
 		sum = 0;
@@ -105,5 +106,35 @@ public class SwitchExample {
 			}
 			i++;
 		}
+
+		System.out.println("--------------");
+
+		// break와 continue
+		// 1부터 1000까지의 숫자 중 11의 배수이자 7의 배수인 첫 번째 수는?
+		for (int b = 1; b <= 1000; b++) {
+			if ((b % 7 == 0) && (b % 11 == 0))
+				System.out.println(b);
+			break;
+		}
+
+		System.out.println("--------------");
+
+		// 구구단
+		for (int g = 1; g < 10; g++) {
+			for (int r = 1; r < 10; r++) {
+				System.out.println(g + "x" + r + "=" + (g * r));
+			}
+		}
+
+		System.out.println("--------------");
+		
+		// 절대값
+		int num1 = 10;
+
+		if (num1 < 0) {
+			System.out.println("절대값:" + (-num1));
+		}
+		else
+			System.out.println("절대값:" + num1);
 	}
 }
